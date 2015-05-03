@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="principal" template="/WEB-INF/jsp/base.jsp">
+        <put-attribute name="title" value="TITLE PAGINA" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/body.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+    
+    <definition name="logged" extends="principal">
+        <put-attribute name="header" value="/WEB-INF/jsp/header_2.jsp" />
+    </definition>
+    
+    
+    <definition name="principal.practica" template="/WEB-INF/jsp/practica/plantilla.jsp">
+        
+        <put-attribute name="headerI" value="/WEB-INF/jsp/practica/headeri.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/practica/header.jsp" />
+        <put-attribute name="headerD" value="/WEB-INF/jsp/practica/headerd.jsp" />
+        <put-attribute name="menuI" value="/WEB-INF/jsp/practica/menui.jsp" />        
+        <put-attribute name="contenido" value="/WEB-INF/jsp/practica/contenido.jsp" />
+        <put-attribute name="menuD" value="/WEB-INF/jsp/practica/menud.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/practica/footer.jsp" />
+    </definition>
+    
+    
+</tiles-definitions>
